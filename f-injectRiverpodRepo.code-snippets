@@ -1,0 +1,11 @@
+{
+	"Inject Riverpod Repository": {
+	  "prefix": "f-injectRiverpodRepo",
+	  "body": [
+		"@Riverpod(keepAlive: true)",
+		"$1 $2($1Ref ref) => $1(ref.read(swaggerProvider));"
+	  ],
+	  "description": "Creates a function to inject a Riverpod repository."
+	}
+  }
+  

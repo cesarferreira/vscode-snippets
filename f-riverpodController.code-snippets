@@ -1,0 +1,29 @@
+{
+	"Riverpod Controller": {
+	  "prefix": "f-riverpodController",
+	  "body": [
+		"import 'dart:async';",
+		"",
+		"import 'package:riverpod_annotation/riverpod_annotation.dart';",
+		"import 'package:tala/core/di/di.providers.dart';",
+		"import 'package:tala/gen/swagger_generated_code/swagger.models.swagger.dart';",
+		"",
+		"part '$1.controller.g.dart';",
+		"",
+		"@Riverpod(keepAlive: true)",
+		"class $2Controller extends _$$2Controller {",
+		"  @override",
+		"  FutureOr<$3?> build() => fetchData();",
+		"",
+		"  Future<$3> fetchData() async {",
+		"    final data = await ref.read($1RepositoryProvider).getData();",
+		"    /// refresh the dashboard",
+		"    state = AsyncValue.data(data);",
+		"    return data;",
+		"  }",
+		"}"
+	  ],
+	  "description": "Creates a new Riverpod controller."
+	}
+  }
+  

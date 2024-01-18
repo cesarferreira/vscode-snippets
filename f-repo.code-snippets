@@ -1,6 +1,6 @@
 {
 	"Flutter Repository Class": {
-	  "prefix": "flutterRepo",
+	  "prefix": "f-repo",
 	  "body": [
 		"import 'package:tala/core/base/base_repository.dart';",
 		"import 'package:tala/gen/swagger_generated_code/swagger.swagger.dart';",
