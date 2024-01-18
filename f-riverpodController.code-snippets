@@ -17,7 +17,7 @@
 		"",
 		"  Future<$3> fetchData() async {",
 		"    final data = await ref.read($1RepositoryProvider).getData();",
-		"    /// refresh the dashboard",
+		"    /// refresh the state with the new data",
 		"    state = AsyncValue.data(data);",
 		"    return data;",
 		"  }",
